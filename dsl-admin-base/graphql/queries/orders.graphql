@@ -1,0 +1,10 @@
+#import "../fragments/order-list.graphql"
+
+query GetOrders($prams: AdminOrdersParams!) {
+  getAdminOrders(params: $prams) {
+    totalCount
+    adminOrders {
+      ...DslOrderListFields
+    }
+  }
+}

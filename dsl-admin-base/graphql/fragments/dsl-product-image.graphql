@@ -1,0 +1,10 @@
+fragment DslProductImageFields on DslProductImage {
+  id
+  productId
+  type
+  key
+  fullSizePath
+  thumbnailPath
+  createdOn
+  updatedOn
+}

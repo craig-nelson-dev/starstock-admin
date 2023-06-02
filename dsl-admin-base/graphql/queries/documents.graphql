@@ -1,0 +1,15 @@
+query GetDocuments($params: SupportDocumentAdminParams) {
+  getAdminSupportDocuments(params: $params) {
+    totalCount
+    documents {
+      id
+      name
+      url
+      status {
+        id
+        value
+        displayName
+      }
+    }
+  }
+}

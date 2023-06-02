@@ -1,0 +1,7 @@
+query FindOutlet($input: FindOutletParams!) {
+  findOutlet(input: $input) {
+    id
+    name
+    accountNumber
+  }
+}

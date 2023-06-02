@@ -1,0 +1,10 @@
+#import "../fragments/dsl-product.graphql"
+
+query GetProducts($params: DslProductAdminParams) {
+  getAdminProducts(params: $params) {
+    products {
+      ...DslProductFields
+    }
+    totalCount
+  }
+}

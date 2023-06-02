@@ -1,0 +1,12 @@
+query GetTermsConditionsByID($i: Int!) {
+  getTermsConditionsByID(id: $i) {
+    id
+    title
+    content
+    accepted
+    status {
+      value
+      displayName
+    }
+  }
+}

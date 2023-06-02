@@ -1,0 +1,25 @@
+mutation UpdateAds($input: [AdInput!]) {
+  updateAds(input: $input) {
+    ads {
+      id
+      status {
+        value
+      }
+      type
+      image {
+        id
+        type
+        url
+        mobileUrl
+      }
+      targetUrl
+      identifier
+      grouping
+      position
+      viewCount
+      clickCount
+      createdOn
+      updatedOn
+    }
+  }
+}

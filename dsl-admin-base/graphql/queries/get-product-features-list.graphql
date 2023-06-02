@@ -1,0 +1,34 @@
+query getProductFeaturesList($i: ProductFeaturesListInput) {
+  getProductFeaturesList(params: $i) {
+    totalCount
+    features {
+      id
+      name
+      position
+      description
+      featured
+      filterable
+      createdOn
+      updatedOn
+      readOnly
+      code
+      multipleValueSelection
+      storeFrontDisplay
+      mandatory
+      brandOwnerDisplay
+      multipleValueSelection
+      type {
+        id
+        name
+      }
+      status {
+        id
+        displayName
+      }
+      defaultValues {
+        value
+        position
+      }
+    }
+  }
+}

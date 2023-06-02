@@ -1,0 +1,38 @@
+query GetProductFeatureById($id: Int!) {
+  getProductFeatureById(id: $id) {
+    id
+    name
+    value
+    values {
+      id
+      value
+    }
+    description
+    featured
+    filterable
+    position
+    createdOn
+    updatedOn
+    readOnly
+    code
+    type {
+      id
+      name
+      createdOn
+      updatedOn
+    }
+    status {
+      id
+      value
+      displayName
+    }
+    defaultValues {
+      value
+      position
+    }
+    storeFrontDisplay
+    mandatory
+    brandOwnerDisplay
+    multipleValueSelection
+  }
+}

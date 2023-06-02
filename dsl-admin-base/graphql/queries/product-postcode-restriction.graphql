@@ -1,0 +1,14 @@
+query GetProductPostcodeRestriction($id: Int!) {
+  getProductPostcodeRestrictions(productId: $id) {
+    postcodes {
+      id
+      postcode {
+        id
+        postcode
+        defaultAvailable
+      }
+      deliveryAvailable
+      brandLocked
+    }
+  }
+}

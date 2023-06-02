@@ -1,0 +1,6 @@
+query GetAdminDistributors {
+  getAdminDistributors {
+    id
+    displayName
+  }
+}

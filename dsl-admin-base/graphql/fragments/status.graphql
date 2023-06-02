@@ -1,0 +1,8 @@
+fragment StatusFields on Status {
+  id
+  value
+  displayName
+  description
+  createdOn
+  updatedOn
+}

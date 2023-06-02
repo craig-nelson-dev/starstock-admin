@@ -1,0 +1,73 @@
+query GetBrandOwnerByID($id: Int!) {
+  getBrandOwnerByID(brandId: $id) {
+    owner {
+      id
+      displayName
+      slug
+      language
+      mainEmail
+      ccEmail
+      phone
+      installEmail
+      pumpClipEmail
+      createdOn
+      updatedOn
+      description
+      storefrontLogo
+      adminLogo
+      isBrandNursery
+      isDefaultDistributor
+      isBrandPartner
+      orderEmailAddresses
+      ads {
+        id
+        status {
+          value
+        }
+        type
+        image {
+          id
+          status {
+            value
+          }
+          type
+          url
+          mobileUrl
+          thumbnail
+          altText
+          titleText
+          name
+          createdOn
+          updatedOn
+        }
+        targetUrl
+        identifier
+        grouping
+        position
+        titleText
+      }
+    }
+    address {
+      id
+      outletId
+      title
+      firstName
+      middleName
+      lastName
+      lineOne
+      lineTwo
+      lineThree
+      city
+      county
+      postcode
+      country
+      type
+      brandOwnerId
+    }
+    logisticsFees {
+      id
+      logisticsFeeId
+      fee
+    }
+  }
+}

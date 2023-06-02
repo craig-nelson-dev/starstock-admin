@@ -1,0 +1,10 @@
+query GetBrandOwnerOverview($i: BrandOwnerOverviewInput!) {
+  getBrandOwnerOverview(input: $i) {
+    totalOrders
+    activeProducts
+    ordersValue
+    orderingAccounts
+    activePromotions
+    productsVolume
+  }
+}

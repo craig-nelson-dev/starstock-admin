@@ -1,0 +1,5 @@
+mutation UpdateCompanyDetails($input: UpdateStarStockCompanyDetailsInput) {
+  updateStarStockCompanyDetails(input: $input) {
+    companyName
+  }
+}

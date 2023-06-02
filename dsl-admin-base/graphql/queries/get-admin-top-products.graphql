@@ -1,0 +1,8 @@
+query GetAdminTopProducts($i: AdminOverviewInput!) {
+  getAdminTopProducts(input: $i) {
+    id
+    name
+    code
+    thumbnailPath
+  }
+}

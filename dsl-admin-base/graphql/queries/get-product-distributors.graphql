@@ -1,0 +1,7 @@
+query getProductDistributors($params: AvailableDistributorParams!) {
+  getAvailableProductDistributors(params: $params) {
+    id
+    name
+    isDefault
+  }
+}

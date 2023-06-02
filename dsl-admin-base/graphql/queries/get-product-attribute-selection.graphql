@@ -1,0 +1,27 @@
+query GetProductAttributeSelection($productId: Int) {
+  getProductAttributeSelection(productId: $productId) {
+    feature {
+      id
+      name
+      type {
+        name
+      }
+      position
+      multipleValueSelection
+      readOnly
+      status {
+        id
+        displayName
+      }
+      mandatory
+      defaultValues {
+        value
+        position
+      }
+      value
+      values {
+        value
+      }
+    }
+  }
+}

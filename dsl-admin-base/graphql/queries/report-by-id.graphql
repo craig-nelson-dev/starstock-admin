@@ -1,0 +1,20 @@
+query GetReportById($id: Int!) {
+  getReportById(id: $id) {
+    id
+    name
+    type
+    data {
+      columns {
+        name
+        value
+      }
+    }
+    createdBy {
+      id
+      firstName
+      lastName
+    }
+    createdOn
+    updatedOn
+  }
+}

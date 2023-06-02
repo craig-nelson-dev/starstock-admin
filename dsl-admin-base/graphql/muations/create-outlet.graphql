@@ -1,0 +1,8 @@
+mutation CreateOutlet($input: InsertOutletInput!) {
+  insertAdminOutlet(input: $input) {
+    outlet {
+      id
+      name
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation UpdateLogisticsFee($input: UpdateLogisticsFeeInput!) {
+  updateAdminLogisticsFee(input: $input) {
+    fee {
+      id
+    }
+  }
+}

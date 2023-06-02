@@ -1,0 +1,6 @@
+query GetAdminTopPromotions($i: AdminOverviewInput!) {
+  getAdminTopPromotions(input: $i) {
+    id
+    name
+  }
+}

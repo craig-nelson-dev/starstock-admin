@@ -1,0 +1,10 @@
+#import "../fragments/dsl-user-list.graphql"
+
+query GetUsers($params: AdminUsersParams!) {
+  getAdminUsers(params: $params) {
+    users {
+      ...DslUserListItemFields
+    }
+    totalCount
+  }
+}

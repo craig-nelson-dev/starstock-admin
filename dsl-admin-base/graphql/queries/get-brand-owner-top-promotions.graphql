@@ -1,0 +1,6 @@
+query GetBrandOwnerTopPromotions {
+  getBrandOwnerTopPromotions {
+    id
+    name
+  }
+}

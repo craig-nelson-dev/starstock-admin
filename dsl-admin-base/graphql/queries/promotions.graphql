@@ -1,0 +1,69 @@
+query GetPromotions($params: PromotionsListParams!) {
+  getAdminPromotions(params: $params) {
+    id
+    name
+    status
+    createdOn
+    identityCode
+    longDescription
+    shortDescription
+    activeFrom
+    activeTo
+    categoriesInPromotion
+    productsInPromotion
+    terms
+    containsVoucherCode
+    imagePath
+    hiddenFromAll
+    brandId
+    distributorId
+    priority
+    conditions {
+      type
+      comparator
+      order
+      promotionId
+      in
+      id
+      result
+      multiplesOf
+      equalOrLess
+      equalOrGreater
+      greaterThan
+      lessThan
+      notIn
+      voucherCodes {
+        id
+        code
+        redemptionCount
+        maxRedemptionCount
+        enabled
+      }
+    }
+    effects {
+      id
+      name
+      type
+      value
+      taxMultiplier
+      freeStock {
+        entityId
+        qty
+      }
+      rangeSelect {
+        entityId
+        qty
+      }
+    }
+    limits {
+      value
+      id
+      type
+      order
+    }
+    type {
+      name
+      displayName
+    }
+  }
+}

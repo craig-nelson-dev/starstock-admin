@@ -1,0 +1,11 @@
+query GetAdminOverview($i: AdminOverviewInput!) {
+  getAdminOverview(input: $i) {
+    inactiveMarketingUsers
+    activeProducts
+    orderingAccounts
+    activePromotions
+    brandOwners
+    registeredCustomers
+    noWeekOrderCustomers
+  }
+}

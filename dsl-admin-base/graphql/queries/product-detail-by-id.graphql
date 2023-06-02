@@ -1,0 +1,34 @@
+#import "../fragments/dsl-product.graphql"
+
+query ProductById($id: Int!) {
+  getProductById(id: $id) {
+    ...DslProductFields
+    ads {
+      id
+      status {
+        value
+      }
+      type
+      image {
+        id
+        status {
+          value
+        }
+        type
+        url
+        mobileUrl
+        thumbnail
+        altText
+        titleText
+        name
+        createdOn
+        updatedOn
+      }
+      targetUrl
+      identifier
+      grouping
+      position
+      titleText
+    }
+  }
+}

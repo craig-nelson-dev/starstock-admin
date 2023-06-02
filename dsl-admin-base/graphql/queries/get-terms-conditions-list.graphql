@@ -1,0 +1,16 @@
+query GetTermsConditionsList($i: TermsConditionsListParams!) {
+  getTermsConditionsList(input: $i) {
+    totalCount
+    termsConditions {
+      id
+      content
+      title
+      accepted
+      status {
+        id
+        displayName
+      }
+      createdOn
+    }
+  }
+}

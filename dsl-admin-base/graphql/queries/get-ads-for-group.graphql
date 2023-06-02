@@ -1,0 +1,29 @@
+query GetAdsForGroup($groupName: String!) {
+  getAdsForGroup(name: $groupName) {
+    id
+    status {
+      value
+    }
+    type
+    image {
+      id
+      status {
+        value
+      }
+      type
+      url
+      mobileUrl
+      thumbnail
+      altText
+      titleText
+      name
+      createdOn
+      updatedOn
+    }
+    targetUrl
+    identifier
+    grouping
+    position
+    titleText
+  }
+}

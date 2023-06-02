@@ -1,0 +1,7 @@
+#import "../fragments/dsl-user.graphql"
+
+mutation createUser($input: InsertUserInput!) {
+  insertAdminUser(input: $input) {
+    ...DslUserFields
+  }
+}

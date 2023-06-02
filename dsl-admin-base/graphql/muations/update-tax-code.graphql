@@ -1,0 +1,5 @@
+mutation UpdateTaxCode($input: TaxCodeInput!) {
+  updateTaxCode(input: $input) {
+    id
+  }
+}

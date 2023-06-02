@@ -1,0 +1,5 @@
+mutation UpsertBrandOwner($input: UpsertBrandOwnerInput!) {
+  upsertBrandOwner(input: $input) {
+    id
+  }
+}

@@ -1,0 +1,29 @@
+mutation UpdateProduct($input: UpdateProductInput!, $ads: [AdInput!]) {
+  updateProduct(input: $input) {
+    product {
+      id
+    }
+  }
+  updateAds(input: $ads) {
+    ads {
+      id
+      status {
+        value
+      }
+      type
+      image {
+        id
+        type
+        url
+      }
+      targetUrl
+      identifier
+      grouping
+      position
+      viewCount
+      clickCount
+      createdOn
+      updatedOn
+    }
+  }
+}

@@ -1,0 +1,14 @@
+query GetTaxCodeById($id: Int!) {
+  getTaxCodeById(id: $id) {
+    id
+    name
+    code
+    rate
+    calculationType
+    status {
+      id
+      value
+      displayName
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation UpdateBOProduct($input: UpdateProductInput!) {
+  updateProduct(input: $input) {
+    product {
+      id
+    }
+  }
+}

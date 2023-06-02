@@ -1,0 +1,16 @@
+query GetLogisticsFees($params: LogisticsFeesParams!) {
+  getAdminLogisticsFees(params: $params) {
+    totalCount
+    fees {
+      id
+      name
+      logisticsType
+      fee
+      status {
+        id
+        value
+        displayName
+      }
+    }
+  }
+}

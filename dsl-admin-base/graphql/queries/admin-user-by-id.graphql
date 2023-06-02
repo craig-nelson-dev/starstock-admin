@@ -1,0 +1,7 @@
+#import "../fragments/dsl-user.graphql"
+
+query GetAdminUserById($id: Int!) {
+  getAdminUserById(id: $id) {
+    ...DslUserFields
+  }
+}

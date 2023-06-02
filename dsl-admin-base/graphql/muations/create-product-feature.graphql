@@ -1,0 +1,5 @@
+mutation CreateProductFeature($input: InsertProductFeatureInput) {
+  insertProductFeature(input: $input) {
+    id
+  }
+}

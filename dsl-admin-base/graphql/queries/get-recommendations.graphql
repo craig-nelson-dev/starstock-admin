@@ -1,0 +1,22 @@
+query GetRecommendations($i: RecommendationsListParams!) {
+  getRecommendations(input: $i) {
+    totalCount
+    recommendations {
+      id
+      status {
+        id
+        displayName
+      }
+      title
+      description
+      closedOn
+      createdOn
+      updatedOn
+      viewedOn
+      brandOwner {
+        id
+        displayName
+      }
+    }
+  }
+}

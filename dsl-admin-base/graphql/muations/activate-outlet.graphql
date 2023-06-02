@@ -1,0 +1,7 @@
+mutation ActivateOutlet($input: ActivateOutletInput!) {
+  activateOutlet(input: $input) {
+    outlet {
+      id
+    }
+  }
+}

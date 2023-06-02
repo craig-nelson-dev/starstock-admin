@@ -1,0 +1,13 @@
+query GetCompanyDetails {
+  getStarStockCompanyDetails {
+    companyName
+    address1
+    address2
+    city
+    county
+    postcode
+    vatNumber
+    awrs
+    fee
+  }
+}

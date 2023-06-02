@@ -1,0 +1,25 @@
+query GetSalesByOrder($input: SalesReportInput!) {
+  getSalesReportByOrder(input: $input) {
+    rows {
+      accountNumber
+      outletName
+      orderNumber
+      orderDate
+      deliveryDate
+      podDate
+      processedOn
+      brandOwner
+      productCode
+      productName
+      price
+      inputPrice
+      platformFee
+      logisticsFee
+      qty
+      lineTotal
+      inputTotal
+      platformTotal
+      logisticsTotal
+    }
+  }
+}

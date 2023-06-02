@@ -1,0 +1,9 @@
+query GetAdGroups($input: BasicAdminListInput!) {
+  getAdGroups(input: $input) {
+    groups {
+      name
+      adCount
+    }
+    totalCount
+  }
+}

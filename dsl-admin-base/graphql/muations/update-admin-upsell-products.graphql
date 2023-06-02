@@ -1,0 +1,5 @@
+mutation UpdateAdminUpsellProducts($input: UpdateUpsellProductsInput!) {
+  updateAdminUpsellProducts(input: $input) {
+    id
+  }
+}

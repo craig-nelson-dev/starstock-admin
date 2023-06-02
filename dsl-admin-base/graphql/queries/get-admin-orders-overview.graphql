@@ -1,0 +1,12 @@
+query GetAdminOrdersOverview($i: AdminOverviewInput!) {
+  getAdminOrdersOverview(input: $i) {
+    ordersStats {
+      totalOrders
+      ordersValue
+      ordersItems
+      orderingCustomers
+      productsVolume
+    }
+    orderLines
+  }
+}

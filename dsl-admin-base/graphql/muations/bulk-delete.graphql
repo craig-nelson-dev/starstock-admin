@@ -1,0 +1,7 @@
+mutation BulkDelete($input: BulkActionInput) {
+  bulkActionDelete(input: $input) {
+    error {
+      id
+    }
+  }
+}

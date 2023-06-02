@@ -1,0 +1,3 @@
+mutation DeleteLogisticsFeeById($id: Int!) {
+  deleteAdminLogisticsFeeByID(logisticsFeeId: $id)
+}

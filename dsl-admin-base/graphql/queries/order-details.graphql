@@ -1,0 +1,7 @@
+#import "../fragments/order.graphql"
+
+query GetOrderDetails($id: Int!) {
+  getAdminOrderById(id: $id) {
+    ...DslOrderFields
+  }
+}

@@ -1,0 +1,7 @@
+query GetAdminOrdersWeeklyStats {
+  getAdminOrdersWeeklyStats {
+    dateTime
+    ordersCount
+    orderAmount
+  }
+}

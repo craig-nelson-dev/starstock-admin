@@ -1,0 +1,30 @@
+mutation CreateCredit($input: CreditNoteInput!) {
+  createCreditNote(input: $input) {
+    success
+    note {
+      id
+      orderId
+      subtotal
+      discount
+      tax
+      total
+      createdBy {
+        id
+        email
+      }
+      createdOn
+      updatedOn
+      items {
+        id
+        brandOwnerId
+        orderItemId
+        subtotal
+        tax
+        total
+        taxRate
+        taxCalculationType
+        reasons
+      }
+    }
+  }
+}

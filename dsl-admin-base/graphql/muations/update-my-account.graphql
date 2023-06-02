@@ -1,0 +1,7 @@
+mutation UpdateMyAccount($input: UserUpdateInput!) {
+  dslUpdateUser(input: $input) {
+    user {
+      id
+    }
+  }
+}

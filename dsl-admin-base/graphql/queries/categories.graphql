@@ -1,0 +1,59 @@
+query GetCategories {
+  getAdminCategories {
+    id
+    parentId
+    status {
+      id
+      value
+      displayName
+      description
+    }
+    name
+    shortDescription
+    longDescription
+    seoTitle
+    seoDescription
+    seoKeywords
+    seoSlug
+    createdOn
+    updatedOn
+    subCategories {
+      id
+      parentId
+      status {
+        id
+        value
+        displayName
+        description
+      }
+      name
+      shortDescription
+      longDescription
+      seoTitle
+      seoDescription
+      seoKeywords
+      seoSlug
+      createdOn
+      updatedOn
+      subCategories {
+        id
+        parentId
+        status {
+          id
+          value
+          displayName
+          description
+        }
+        name
+        shortDescription
+        longDescription
+        seoTitle
+        seoDescription
+        seoKeywords
+        seoSlug
+        createdOn
+        updatedOn
+      }
+    }
+  }
+}

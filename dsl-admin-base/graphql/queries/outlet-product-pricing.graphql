@@ -1,0 +1,16 @@
+query GetOutletProductPricing($params: OutletProductPricingParams!) {
+  getOutletProductPricing(params: $params) {
+    pricing {
+      productId
+      productCode
+      ProductName
+      price {
+        inputPrice
+        starStockFee
+        logisticsFee
+        dateFrom
+        dateTo
+      }
+    }
+  }
+}

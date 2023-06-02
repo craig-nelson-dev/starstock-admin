@@ -1,0 +1,11 @@
+mutation UpdateOutlet($input: UpdateAdminOutletInput!) {
+  updateAdminOutlet(input: $input) {
+    outlet {
+      id
+      status {
+        id
+        displayName
+      }
+    }
+  }
+}

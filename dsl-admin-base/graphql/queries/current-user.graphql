@@ -1,0 +1,26 @@
+query GetCurrentUser {
+  dslCurrentUser {
+    result
+    user {
+      id
+      firstName
+      lastName
+      type
+      email
+      phone
+      title
+      marketing
+      type
+      brand {
+        id
+        displayName
+        adminLogo
+        termsConditions {
+          id
+          content
+          accepted
+        }
+      }
+    }
+  }
+}

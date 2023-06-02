@@ -1,0 +1,4 @@
+.next
+src/graphql/generated/*
+graphql.schema.json
+.figmagic

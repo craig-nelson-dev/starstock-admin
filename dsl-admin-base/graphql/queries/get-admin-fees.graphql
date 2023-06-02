@@ -1,0 +1,10 @@
+query GetCurrentAdminFees {
+  getAdminLogisticsFees {
+    fees {
+      id
+      name
+      logisticsType
+      fee
+    }
+  }
+}

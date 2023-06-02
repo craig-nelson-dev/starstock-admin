@@ -1,0 +1,41 @@
+#import "../fragments/dsl-user.graphql"
+
+query GetCreditNotes($input: CreditNoteFilters!) {
+  getCreditNotes(input: $input) {
+    totalCount
+    notes {
+      id
+      creditNumber
+      orderId
+      orderReference
+      outletName
+      providerReferences {
+        id
+        creditNoteId
+        reference
+        paymentProvider
+      }
+      subtotal
+      discount
+      tax
+      total
+      createdOn
+      updatedOn
+      items {
+        id
+        brandOwnerId
+        orderItemId
+        subtotal
+        qty
+        tax
+        total
+        taxRate
+        taxCalculationType
+        reasons
+      }
+      createdBy {
+        ...DslUserFields
+      }
+    }
+  }
+}

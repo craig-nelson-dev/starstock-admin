@@ -1,0 +1,5 @@
+mutation UpdateBrandOwnerRecommendation($input: UpdateBrandOwnerRecommendationInput!) {
+  updateBrandOwnerRecommendation(input: $input) {
+    id
+  }
+}

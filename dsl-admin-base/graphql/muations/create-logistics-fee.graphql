@@ -1,0 +1,7 @@
+mutation CreateLogisticsFee($input: InsertLogisticsFeeInput!) {
+  insertAdminLogisticsFee(input: $input) {
+    fee {
+      id
+    }
+  }
+}

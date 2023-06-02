@@ -1,0 +1,48 @@
+query GetAbandonedCarts($params: AdminAbandonedCartsInput) {
+  getAdminAbandonedCarts(params: $params) {
+    totalCount
+    carts {
+      id
+      userId
+      OutletId
+      guestId
+      totalProducts
+      createdOn
+      updatedOn
+      products {
+        id
+        cartId
+        productId
+        qty
+        lastKnownPrice
+      }
+      user {
+        id
+        title
+        firstName
+        middleName
+        lastName
+        phone
+        email
+        marketing
+        identities {
+          id
+          type
+          value
+        }
+      }
+      outlet {
+        id
+        name
+        style
+        legalStatus
+        companyName
+        charityNumber
+        dropPointDescription
+        createdOn
+        updatedOn
+        lastOrdered
+      }
+    }
+  }
+}

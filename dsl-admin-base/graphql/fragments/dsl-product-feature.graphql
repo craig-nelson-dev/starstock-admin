@@ -1,0 +1,15 @@
+fragment DslProductFeatureFields on DslProductFeature {
+  id
+  name
+  description
+  value
+  values {
+    id
+    value
+  }
+  featured
+  filterable
+  position
+  createdOn
+  updatedOn
+}

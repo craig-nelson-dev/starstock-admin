@@ -1,0 +1,5 @@
+mutation InsertTermsConditions($input: InsertTermsConditions!) {
+  insertTermsConditions(input: $input) {
+    id
+  }
+}

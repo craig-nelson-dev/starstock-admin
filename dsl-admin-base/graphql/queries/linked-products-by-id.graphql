@@ -1,0 +1,12 @@
+#import "../fragments/dsl-product.graphql"
+
+query GetAdminLinkedProducts($productId: Int!) {
+  getAdminLinkedProducts(productId: $productId) {
+    youMightAlsoLike {
+      ...DslProductFields
+    }
+    similar {
+      ...DslProductFields
+    }
+  }
+}

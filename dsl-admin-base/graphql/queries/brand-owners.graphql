@@ -1,0 +1,11 @@
+query GetBrandOwner {
+  getBrandOwner {
+    brandOwners {
+      id
+      displayName
+      isBrandNursery
+      isDefaultDistributor
+      isBrandPartner
+    }
+  }
+}

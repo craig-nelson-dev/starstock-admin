@@ -1,0 +1,13 @@
+query GetLogisticsFeeById($id: Int!) {
+  getAdminLogisticsFeeById(id: $id) {
+    id
+    name
+    logisticsType
+    fee
+    status {
+      id
+      value
+      displayName
+    }
+  }
+}

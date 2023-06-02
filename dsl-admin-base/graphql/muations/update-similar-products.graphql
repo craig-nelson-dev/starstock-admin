@@ -1,0 +1,9 @@
+#import "../fragments/dsl-product.graphql"
+
+mutation UpdateAdminSimilarProducts($input: UpdateSimilarProductsInput!) {
+  updateAdminSimilarProducts(input: $input) {
+    products {
+      ...DslProductFields
+    }
+  }
+}

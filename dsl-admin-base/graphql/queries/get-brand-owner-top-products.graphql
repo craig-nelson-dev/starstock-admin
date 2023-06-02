@@ -1,0 +1,14 @@
+query GetBrandOwnerTopProducts($i: BrandOwnerOverviewInput!) {
+  getBrandOwnerTopProducts(input: $i) {
+    id
+    status {
+      displayName
+    }
+    name
+    shortDescription
+    longDescription
+    code
+    totalSales
+    thumbnailPath
+  }
+}

@@ -1,0 +1,6 @@
+fragment PriceFields on Price {
+  subtotal
+  vat
+  discount
+  total
+}

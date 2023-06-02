@@ -1,0 +1,85 @@
+#import "./dsl-product-feature.graphql"
+#import "./dsl-product-image.graphql"
+#import "./price.graphql"
+#import "./status.graphql"
+
+fragment DslProductFields on DslProduct {
+  id
+  status {
+    ...StatusFields
+  }
+  type
+  name
+  shortDescription
+  longDescription
+  code
+  mrrp
+  popularity
+  searchWords
+  seoTitle
+  seoDescription
+  seoKeywords
+  seoSlug
+  weight
+  boxLength
+  boxWidth
+  boxHeight
+  featured
+  createdOn
+  updatedOn
+  volume
+  hideLoggedOut
+  flaggedPrice
+  features {
+    ...DslProductFeatureFields
+  }
+  options {
+    id
+    productId
+    name
+    description
+    icon
+    createdOn
+    updatedOn
+  }
+  adminPricing {
+    productId
+    pricing {
+      inputPrice
+      starStockFee
+      logisticsFee
+      logisticsFeeId
+      taxCodeId
+      dateFrom
+      dateTo
+    }
+  }
+  price {
+    ...PriceFields
+  }
+  taxCode {
+    id
+    name
+  }
+  mainImage {
+    ...DslProductImageFields
+  }
+  categories {
+    id
+    name
+  }
+  associations {
+    vendor {
+      id
+      name
+    }
+    distributor {
+      id
+      name
+    }
+  }
+  additionalImages {
+    ...DslProductImageFields
+  }
+  onWishlist
+}

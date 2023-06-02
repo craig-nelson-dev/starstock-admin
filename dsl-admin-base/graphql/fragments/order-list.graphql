@@ -1,0 +1,57 @@
+fragment DslOrderListFields on DslOrder {
+  id
+  reference
+  status {
+    value
+    displayName
+    description
+    createdOn
+    updatedOn
+  }
+  userName
+  telephone
+  subtotal
+  discount
+  delivery
+  total
+  totalTax
+  notes
+  firstname
+  lastname
+  company
+  email
+  createdOn
+  updatedOn
+  orderBody {
+    id
+    orderId
+    status {
+      id
+      displayName
+      description
+      createdOn
+      updatedOn
+    }
+    distributorName
+    subtotal
+    discount
+    delivery
+    tax
+    total
+    cutoffDeliveryDate
+    selectedDeliveryDate
+    actualDeliveryDate
+    updatedOn
+    deliveredItems {
+      id
+      orderBodyId
+      code
+      name
+      qtyOrdered
+      qtyAccepted
+      qtyDelivered
+      rejectionCode
+    }
+  }
+  outletName
+}

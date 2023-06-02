@@ -1,0 +1,28 @@
+#import "./status.graphql"
+
+fragment DslUserListItemFields on DslUserListItem {
+  brand {
+    id
+    displayName
+  }
+  id
+  title
+  firstName
+  email
+  middleName
+  lastName
+  phone
+  marketing
+  type
+  status {
+    ...StatusFields
+  }
+  outlet
+  brand {
+    id
+    displayName
+  }
+  createdOn
+  lastLogin
+  lastOrdered
+}

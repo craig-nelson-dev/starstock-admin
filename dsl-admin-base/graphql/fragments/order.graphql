@@ -1,0 +1,146 @@
+fragment DslOrderFields on DslOrder {
+  id
+  reference
+  userId
+  outletId
+  status {
+    value
+    displayName
+    description
+    createdOn
+    updatedOn
+  }
+  userName
+  telephone
+  subtotal
+  discount
+  delivery
+  total
+  totalTax
+  notes
+  firstname
+  lastname
+  company
+  email
+  billingLine1
+  billingLine2
+  billingLine3
+  billingCity
+  billingCounty
+  billingPostcode
+  billingCountry
+  shippingLine1
+  shippingLine2
+  shippingLine3
+  shippingCity
+  shippingCounty
+  shippingPostcode
+  shippingCountry
+  createdOn
+  updatedOn
+  orderBody {
+    id
+    status {
+      id
+      displayName
+      description
+      createdOn
+      updatedOn
+    }
+    distributorName
+    subtotal
+    discount
+    delivery
+    tax
+    total
+    cutoffDeliveryDate
+    selectedDeliveryDate
+    actualDeliveryDate
+    deliveredItems {
+      id
+      orderBodyId
+      code
+      name
+      qtyOrdered
+      qtyAccepted
+      qtyDelivered
+      rejectionCode
+    }
+    updatedOn
+    orderItems {
+      id
+      orderBodyId
+      productId
+      pricing {
+        id
+        type
+        identifier
+        value
+        position
+        isTax
+      }
+      name
+      type
+      code
+      weight
+      boxLength
+      boxWidth
+      boxHeight
+      price
+      qty
+      total
+      totalTax
+      taxRate
+      taxCalculationType
+      createdOn
+      updatedOn
+      mainImage
+      associations {
+        vendor {
+          id
+          name
+        }
+        distributor {
+          id
+          name
+        }
+      }
+      supplements {
+        id
+        orderItemId
+        name
+        description
+        selected
+      }
+    }
+  }
+  payments {
+    id
+    orderId
+    invoiceNumber
+    status {
+      value
+    }
+    paymentType
+    reference
+    method
+    value
+  }
+  promotions {
+    promotionId
+    orderItemId
+    effectType
+    promotionName
+    description
+    originalValue
+    valueChange
+    taxChange
+    newValue
+    productId
+    taxMultiplier
+    qty
+    taxDescription
+    hiddenFromBrandOwner
+  }
+  outletName
+}

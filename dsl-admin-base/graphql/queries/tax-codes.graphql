@@ -1,0 +1,16 @@
+query GetTaxCodes($params: TaxCodesAdminParams) {
+  getAdminTaxCodes(params: $params) {
+    totalCount
+    taxCodes {
+      id
+      name
+      status {
+        id
+        value
+        displayName
+      }
+      calculationType
+      rate
+    }
+  }
+}

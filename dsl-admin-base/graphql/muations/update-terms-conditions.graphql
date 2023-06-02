@@ -1,0 +1,5 @@
+mutation UpdateTermsConditions($input: UpdateTermsConditions!) {
+  updateTermsConditions(input: $input) {
+    id
+  }
+}

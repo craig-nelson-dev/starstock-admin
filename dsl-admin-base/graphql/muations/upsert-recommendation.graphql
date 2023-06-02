@@ -1,0 +1,5 @@
+mutation UpsertRecommendation($i: UpsertRecommendationInput!) {
+  upsertRecommendation(input: $i) {
+    id
+  }
+}

@@ -1,0 +1,23 @@
+query GetReports($params: BasicAdminListInput!) {
+  getReports(params: $params) {
+    total
+    reports {
+      id
+      name
+      type
+      data {
+        columns {
+          name
+          value
+        }
+      }
+      createdBy {
+        id
+        firstName
+        lastName
+      }
+      createdOn
+      updatedOn
+    }
+  }
+}

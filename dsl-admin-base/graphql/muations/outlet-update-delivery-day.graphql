@@ -1,0 +1,15 @@
+mutation UpdateOutletDeliveryDay($input: UpdateOutletDeliveryDaysInput!) {
+  updateOutletDeliveryDays(input: $input) {
+    deliveryDays {
+      id
+      fullDate
+      day
+      price
+      isAvailable
+      createdOn
+      updatedOn
+      type
+      leadDays
+    }
+  }
+}

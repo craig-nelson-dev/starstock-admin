@@ -1,0 +1,23 @@
+query GetRecommendationByID($id: Int!) {
+  getRecommendationByID(id: $id) {
+    id
+    status {
+      id
+      displayName
+    }
+    title
+    description
+    closedOn
+    createdOn
+    viewedOn
+    createdBy {
+      firstName
+      lastName
+    }
+    updatedOn
+    brandOwner {
+      id
+      displayName
+    }
+  }
+}

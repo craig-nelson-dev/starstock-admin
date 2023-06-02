@@ -1,0 +1,39 @@
+#import "../fragments/dsl-product.graphql"
+
+query GetAdminAbandonedCartDetails($id: Int!) {
+  getAdminAbandonedCartDetails(id: $id) {
+    id
+    userId
+    OutletId
+    guestId
+    totalProducts
+    createdOn
+    updatedOn
+    products {
+      id
+      cartId
+      productId
+      qty
+      product {
+        ...DslProductFields
+      }
+    }
+    outlet {
+      name
+    }
+    user {
+      title
+      firstName
+      middleName
+      lastName
+    }
+    totals {
+      subtotal
+      discount
+      delivery
+      tax
+      total
+    }
+    canCheckout
+  }
+}

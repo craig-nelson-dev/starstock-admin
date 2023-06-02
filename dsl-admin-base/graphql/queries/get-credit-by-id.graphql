@@ -1,0 +1,37 @@
+#import "../fragments/dsl-user.graphql"
+
+query GetCreditNoteById($id: Int!) {
+  getCreditNoteById(id: $id) {
+    id
+    creditNumber
+    orderId
+    orderReference
+    outletName
+    providerReferences {
+      id
+      creditNoteId
+      reference
+      paymentProvider
+    }
+    subtotal
+    discount
+    tax
+    total
+    createdBy {
+      ...DslUserFields
+    }
+    createdOn
+    updatedOn
+    items {
+      brandOwnerId
+      orderItemId
+      subtotal
+      tax
+      qty
+      total
+      taxRate
+      taxCalculationType
+      reasons
+    }
+  }
+}

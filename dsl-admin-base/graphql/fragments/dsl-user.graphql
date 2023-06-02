@@ -1,0 +1,89 @@
+fragment DslUserFields on DslUser {
+  id
+  type
+  title
+  firstName
+  middleName
+  lastName
+  phone
+  email
+  marketing
+  brand {
+    id
+  }
+  identities {
+    id
+    type
+    value
+  }
+  status {
+    id
+    value
+    displayName
+    description
+    createdOn
+    updatedOn
+  }
+  outlets {
+    id
+    status {
+      id
+      value
+      displayName
+      description
+      createdOn
+      updatedOn
+    }
+    name
+    style
+    legalStatus
+    companyName
+    companyNumber
+    charityNumber
+    dropPointDescription
+    createdOn
+    updatedOn
+    addressBook {
+      id
+      shippingId
+      addresses {
+        id
+        postcode
+      }
+    }
+    outletUsers {
+      role
+      user {
+        id
+        firstName
+        lastName
+      }
+    }
+    lastOrdered
+    outletType
+    features {
+      cashWithOrder
+    }
+    deliveryDays {
+      id
+      fullDate
+      day
+      price
+      isAvailable
+      createdOn
+      updatedOn
+      type
+      leadDays
+    }
+    userRole
+    bdmUser {
+      id
+      firstName
+      lastName
+    }
+    activeOnline
+  }
+  createdOn
+  lastLogin
+  lastOrdered
+}

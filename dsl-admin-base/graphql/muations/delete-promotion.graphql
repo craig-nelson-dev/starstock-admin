@@ -1,0 +1,3 @@
+mutation DeletePromotion($id: Int!) {
+  deletePromotion(input: { promotionID: $id })
+}

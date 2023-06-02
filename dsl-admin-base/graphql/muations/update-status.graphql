@@ -1,0 +1,3 @@
+mutation UpdateEntityStatus($input: UpdateStatusInput) {
+  updateEntityStatus(input: $input)
+}

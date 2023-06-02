@@ -1,0 +1,3 @@
+mutation AcceptTermsConditions($id: Int!) {
+  acceptTermsConditions(id: $id)
+}

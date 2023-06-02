@@ -1,0 +1,14 @@
+fragment AddressFields on Address {
+  id
+  title
+  firstName
+  middleName
+  lastName
+  lineOne
+  lineTwo
+  lineThree
+  city
+  county
+  postcode
+  country
+}

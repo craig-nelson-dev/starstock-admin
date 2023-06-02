@@ -1,0 +1,15 @@
+#import "../fragments/dsl-product.graphql"
+
+query GetAdminUpsellProducts {
+  getAdminUpsellProducts {
+    order {
+      ...DslProductFields
+    }
+    basket {
+      ...DslProductFields
+    }
+    home {
+      ...DslProductFields
+    }
+  }
+}
